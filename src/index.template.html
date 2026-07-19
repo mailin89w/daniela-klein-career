@@ -1,0 +1,275 @@
+<!doctype html>
+<!-- Shared source template: run `npm run build` after editing. -->
+
+<html lang="{{page.html.lang_01}}">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f3efe7" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#171a18" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="{{head.meta.content_01}}" name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="{{head.meta.content_02}}" property="og:locale"/>
+<meta content="Daniela Klein | Technical Project &amp; Delivery" property="og:title"/>
+<meta content="{{head.meta.content_03}}" property="og:description"/>
+<meta content="{{head.meta.content_04}}" property="og:url"/>
+<meta content="https://mailin89w.github.io/daniela-klein-career/assets/daniela-klein.jpg" property="og:image"/>
+<meta content="{{head.meta.content_05}}" property="og:image:alt"/>
+<link href="{{head.link.href_01}}" rel="canonical"/>
+<link href="https://mailin89w.github.io/daniela-klein-career/" hreflang="de" rel="alternate"/>
+<link href="https://mailin89w.github.io/daniela-klein-career/index-en.html" hreflang="en" rel="alternate"/>
+<link href="https://mailin89w.github.io/daniela-klein-career/" hreflang="x-default" rel="alternate"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css?v=20260719-7" rel="stylesheet"/>
+<title>Daniela Klein | Technical Project &amp; Delivery</title>
+<script>
+    document.documentElement.classList.add("js");
+    try {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch (error) {}
+  </script>
+<script type="application/ld+json">{{head.script.text_01}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">{{page.skip_link.text_01}}</a>
+<header class="site-header" data-header="">
+<div class="shell header-inner">
+<a aria-label="{{header.brand.aria_label_01}}" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">DK</span>
+<span>Daniela Klein</span>
+</a>
+<nav aria-label="{{header.primary_nav.aria_label_01}}" class="primary-nav">
+<a href="#profil">{{header.a.text_01}}</a>
+<a href="#staerken">{{header.a.text_02}}</a>
+<a href="#laufbahn">{{header.a.text_03}}</a>
+<a href="#projekte">{{header.a.text_04}}</a>
+</nav>
+<div class="header-actions">
+<nav aria-label="{{header.language_switch.aria_label_01}}" class="language-switch">
+<a href="index.html" lang="de" {{header.language_de.attributes}}>DE</a>
+<span aria-hidden="true">|</span>
+<a href="index-en.html" lang="en" {{header.language_en.attributes}}>EN</a>
+</nav>
+<button aria-label="{{header.theme_toggle.aria_label_01}}" aria-pressed="false" class="theme-toggle" data-theme-toggle="" type="button">
+<svg aria-hidden="true" class="theme-icon theme-icon--moon" viewbox="0 0 24 24">
+<path d="M20.2 15.3A8.5 8.5 0 0 1 8.7 3.8 8.5 8.5 0 1 0 20.2 15.3Z"></path>
+</svg>
+<svg aria-hidden="true" class="theme-icon theme-icon--sun" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="3.5"></circle>
+<path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
+</svg>
+</button>
+<a class="button button--small" href="#kontakt">{{header.button.text_01}}</a>
+</div>
+</div>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero" id="top">
+<div aria-hidden="true" class="hero-orbit hero-orbit--one"></div>
+<div aria-hidden="true" class="hero-orbit hero-orbit--two"></div>
+<div class="shell hero-grid">
+<div class="hero-copy" data-reveal="">
+<p class="eyebrow"><span class="status-dot"></span>{{top.eyebrow.text_01}}</p>
+<h1 id="hero-title">{{top.hero_title.text_01}}<br/><span>{{top.span.text_01}}</span></h1>
+<p class="hero-lead">{{top.hero_lead.text_01}}</p>
+<div aria-label="{{top.button_row.aria_label_01}}" class="button-row">
+<a class="button" href="https://mailin89w.github.io/daniela-klein-detailed-resume/" rel="noopener noreferrer" target="_blank">{{top.button.text_01}}<span aria-hidden="true">↗</span></a>
+<a class="text-link" href="#projekte">{{top.text_link.text_01}}<span aria-hidden="true">↓</span></a>
+</div>
+</div>
+<div class="hero-visual" data-delay="1" data-reveal="">
+<div class="portrait-card">
+<div aria-hidden="true" class="portrait-glow"></div>
+<img alt="{{top.img.alt_01}}" fetchpriority="high" height="600" src="assets/daniela-klein.jpg" width="600"/>
+</div>
+</div>
+</div>
+<div aria-label="{{top.shell.aria_label_01}}" class="shell metrics" data-delay="2" data-reveal="">
+<div class="metric"><strong><span data-count="10">10</span>+</strong><span>{{top.span.text_02}}</span></div>
+<div class="metric"><strong><span data-count="10">10</span></strong><span>{{top.span.text_03}}</span></div>
+<div class="metric"><strong>3</strong><span>{{top.span.text_04}}</span></div>
+<div class="metric"><strong>AI</strong><span>{{top.span.text_05}}</span></div>
+</div>
+</section>
+<section aria-labelledby="profile-title" class="section section--story" id="profil">
+<div class="shell story-grid">
+<div data-reveal="">
+<p class="section-kicker">{{profil.section_kicker.text_01}}</p>
+<h2 id="profile-title">{{profil.profile_title.text_01}}</h2>
+</div>
+<div class="story-copy" data-delay="1" data-reveal="">
+<p class="story-intro">{{profil.story_intro.text_01}}</p>
+<p>{{profil.p.text_01}}</p>
+<div class="signature-line"><span></span><p>{{profil.p.text_02}}</p></div>
+</div>
+</div>
+</section>
+<section aria-labelledby="strengths-title" class="section" id="staerken">
+<div class="shell">
+<div class="section-head" data-reveal="">
+<div><p class="section-kicker">{{staerken.section_kicker.text_01}}</p><h2 id="strengths-title">{{staerken.strengths_title.text_01}}</h2></div>
+<p>{{staerken.p.text_01}}</p>
+</div>
+<div class="strength-grid">
+<article class="strength-card strength-card--wide" data-reveal="">
+<span class="card-index">01</span>
+<div aria-hidden="true" class="card-icon">↳</div>
+<h3>{{staerken.h3.text_01}}</h3>
+<p>{{staerken.p.text_02}}</p>
+<div class="card-tags"><span>{{staerken.span.text_01}}</span><span>QA</span><span>Release</span></div>
+</article>
+<article class="strength-card" data-delay="1" data-reveal="">
+<span class="card-index">02</span><div aria-hidden="true" class="card-icon">◎</div>
+<h3>{{staerken.h3.text_02}}</h3>
+<p>{{staerken.p.text_03}}</p>
+<div class="card-tags"><span>Discovery</span><span>{{staerken.span.text_02}}</span></div>
+</article>
+<article class="strength-card" data-delay="2" data-reveal="">
+<span class="card-index">03</span><div aria-hidden="true" class="card-icon">◇</div>
+<h3>{{staerken.h3.text_03}}</h3>
+<p>{{staerken.p.text_04}}</p>
+<div class="card-tags"><span>Stakeholder</span><span>Workshops</span></div>
+</article>
+<article class="strength-card" data-reveal="">
+<span class="card-index">04</span><div aria-hidden="true" class="card-icon">⌁</div>
+<h3>E-Commerce</h3>
+<p>{{staerken.p.text_05}}</p>
+<div class="card-tags"><span>Shopify</span><span>Shopware</span><span>Spryker</span></div>
+</article>
+<article class="strength-card strength-card--wide" data-delay="1" data-reveal="">
+<span class="card-index">05</span><div aria-hidden="true" class="card-icon">✦</div>
+<h3>{{staerken.h3.text_04}}</h3>
+<p>{{staerken.p.text_06}}</p>
+<div class="card-tags"><span>Frontend</span><span>AI/ML</span><span>MLOps</span><span>WCAG</span></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="timeline-title" class="section" id="laufbahn">
+<div class="shell timeline-layout">
+<div class="timeline-intro" data-reveal="">
+<p class="section-kicker">{{laufbahn.section_kicker.text_01}}</p>
+<h2 id="timeline-title">{{laufbahn.timeline_title.text_01}}</h2>
+<p>{{laufbahn.p.text_01}}</p>
+</div>
+<div class="career-timeline">
+<article class="career-item" data-reveal="">
+<div aria-hidden="true" class="career-dot"></div><p class="career-date">2025–2026</p>
+<div><h3>{{laufbahn.h3.text_01}}</h3><p class="career-place">neuefische | SPICED</p><p>{{laufbahn.p.text_02}}</p></div>
+</article>
+<article class="career-item" data-reveal="">
+<div aria-hidden="true" class="career-dot"></div><p class="career-date">2018–2025</p>
+<div><h3>{{laufbahn.h3.text_02}}</h3><p class="career-place">{{laufbahn.career_place.text_01}}</p><p>{{laufbahn.p.text_03}}</p></div>
+</article>
+<article class="career-item" data-reveal="">
+<div aria-hidden="true" class="career-dot"></div><p class="career-date">2015–2018</p>
+<div><h3>Frontend Development · Digital Delivery</h3><p class="career-place">deepblue networks · Unilever DACH</p><p>{{laufbahn.p.text_04}}</p></div>
+</article>
+<article class="career-item" data-reveal="">
+<div aria-hidden="true" class="career-dot"></div><p class="career-date">2011–2015</p>
+<div><h3>{{laufbahn.h3.text_03}}</h3><p class="career-place">{{laufbahn.career_place.text_02}}</p><p>{{laufbahn.p.text_05}}</p></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="projects-title" class="section section--projects" id="projekte">
+<div class="shell">
+<div class="section-head" data-reveal="">
+<div><p class="section-kicker">{{projekte.section_kicker.text_01}}</p><h2 id="projects-title">{{projekte.projects_title.text_01}}</h2></div>
+<p>{{projekte.p.text_01}}</p>
+</div>
+<div class="project-grid">
+<article class="project-card project-card--featured" data-reveal="">
+<div class="project-meta"><span>Enterprise E-Commerce</span><span>2021–2023</span></div>
+<h3>ALDI Süd · US &amp; DE</h3>
+<p class="project-partner">{{projekte.project_partner.text_01}}</p>
+<p>{{projekte.p.text_02}}</p>
+<ul class="badge-list"><li>Enterprise Delivery</li><li>E-Commerce</li><li>Frontend</li><li>QA</li></ul>
+</article>
+<article class="project-card" data-delay="1" data-reveal="">
+<div class="project-meta"><span>Shopify Storefront</span><span>2023</span></div>
+<h3>KORO</h3><p class="project-partner">{{projekte.project_partner.text_02}}</p>
+<p>{{projekte.p.text_03}}</p>
+<ul class="badge-list"><li>Shopify</li><li>Liquid</li><li>Design System</li></ul>
+</article>
+<article class="project-card" data-delay="2" data-reveal="">
+<div class="project-meta"><span>{{projekte.span.text_01}}</span><span>2015–2018</span></div>
+<h3>Unilever DACH</h3><p class="project-partner">{{projekte.project_partner.text_03}}</p>
+<p>{{projekte.p.text_04}}</p>
+<ul class="badge-list"><li>White Label</li><li>Multi-Brand</li><li>Release</li></ul>
+</article>
+<article class="project-card" data-reveal="">
+<div class="project-meta"><span>Digital Commerce</span><span>2023–2024</span></div>
+<h3>Möbel Martin</h3><p class="project-partner">{{projekte.project_partner.text_04}}</p>
+<p>{{projekte.p.text_05}}</p>
+<ul class="badge-list"><li>Delivery</li><li>Requirements</li><li>QA</li></ul>
+</article>
+<article class="project-card" data-delay="1" data-reveal="">
+<div class="project-meta"><span>Publishing Technology</span><span>2019–2020</span></div>
+<h3>{{projekte.h3.text_01}}</h3><p class="project-partner">{{projekte.project_partner.text_05}}</p>
+<p>{{projekte.p.text_06}}</p>
+<ul class="badge-list"><li>Migration</li><li>White Label</li><li>Publishing</li></ul>
+</article>
+<article class="project-card project-card--more" data-delay="2" data-reveal="">
+<p class="section-kicker">{{projekte.section_kicker.text_02}}</p>
+<h3>{{projekte.h3.text_02}}</h3>
+<p>{{projekte.p.text_07}}</p>
+<a class="text-link" href="#laufbahn">{{projekte.text_link.text_01}}<span aria-hidden="true">↓</span></a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="toolkit-title" class="section section--toolkit" id="technologien">
+<div class="shell">
+<div class="section-head" data-reveal="">
+<div><p class="section-kicker">Toolkit</p><h2 id="toolkit-title">{{technologien.toolkit_title.text_01}}</h2></div>
+<p>{{technologien.p.text_01}}</p>
+</div>
+<div class="toolkit-grid">
+<article class="tool-group" data-reveal=""><p class="tool-label">{{technologien.tool_label.text_01}}</p><div class="badge-cloud"><span>Jira</span><span>Confluence</span><span>Notion</span><span>GitHub</span><span>Scrum</span><span>Kanban</span><span>Workshops</span><span>Requirements Engineering</span><span>Stakeholder Management</span><span>Discovery–Launch</span><span>Change Management</span></div></article>
+<article class="tool-group" data-delay="1" data-reveal=""><p class="tool-label">Commerce &amp; Frontend</p><div class="badge-cloud"><span>Shopify / Liquid</span><span>Shopware</span><span>Spryker</span><span>WordPress</span><span>HTML / CSS</span><span>JavaScript</span><span>Vue.js</span><span>React</span><span>Tailwind CSS</span><span>Figma</span><span>WCAG / A11y</span></div></article>
+<article class="tool-group" data-delay="2" data-reveal=""><p class="tool-label">AI &amp; Delivery Tech</p><div class="badge-cloud"><span>{{technologien.span.text_01}}</span><span>{{technologien.span.text_02}}</span><span>Prompt Engineering</span><span>Python</span><span>MLOps</span><span>CI/CD</span><span>SQL / NoSQL</span><span>AWS / GCP</span><span>Responsible AI</span><span>{{technologien.span.text_03}}</span></div></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="approach-title" class="section" id="arbeitsweise">
+<div class="shell approach-grid">
+<div class="approach-copy" data-reveal="">
+<p class="section-kicker">{{arbeitsweise.section_kicker.text_01}}</p>
+<h2 id="approach-title">{{arbeitsweise.approach_title.text_01}}</h2>
+<p>{{arbeitsweise.p.text_01}}</p>
+</div>
+<ol class="approach-steps">
+<li data-reveal=""><span>01</span><div><h3>{{arbeitsweise.h3.text_01}}</h3><p>{{arbeitsweise.p.text_02}}</p></div></li>
+<li data-reveal=""><span>02</span><div><h3>{{arbeitsweise.h3.text_02}}</h3><p>{{arbeitsweise.p.text_03}}</p></div></li>
+<li data-reveal=""><span>03</span><div><h3>{{arbeitsweise.h3.text_03}}</h3><p>{{arbeitsweise.p.text_04}}</p></div></li>
+<li data-reveal=""><span>04</span><div><h3>{{arbeitsweise.h3.text_04}}</h3><p>{{arbeitsweise.p.text_05}}</p></div></li>
+</ol>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="contact-section" id="kontakt">
+<div class="shell contact-panel" data-reveal="">
+<div><p class="section-kicker">{{kontakt.section_kicker.text_01}}</p><h2 id="contact-title">{{kontakt.contact_title.text_01}}</h2></div>
+<p>{{kontakt.p.text_01}}</p>
+<div class="button-row">
+<a class="button button--light" href="https://www.linkedin.com/in/daniela-klein-0a66471a8/" rel="noopener noreferrer" target="_blank">{{kontakt.button.text_01}}<span aria-hidden="true">↗</span></a>
+<a class="button button--outline-light" href="resume.html">{{kontakt.button.text_02}}</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="shell footer-inner">
+<div><strong>Daniela Klein</strong><p>Technical Project &amp; Delivery · Hamburg</p></div>
+<nav aria-label="{{footer.nav.aria_label_01}}"><a download="" href="assets/Daniela-Klein-Lebenslauf.pdf">{{footer.a.text_01}}</a><a href="https://www.linkedin.com/in/daniela-klein-0a66471a8/" rel="noopener noreferrer" target="_blank">LinkedIn</a><a href="https://www.xing.com/profile/Daniela_Klein70" rel="noopener noreferrer" target="_blank">XING</a></nav>
+<a aria-label="{{footer.back_top.aria_label_01}}" class="back-top" href="#top"><span aria-hidden="true">↑</span></a>
+</div>
+</footer>
+<script defer="" src="app.js?v=20260719-2"></script>
+</body>
+</html>

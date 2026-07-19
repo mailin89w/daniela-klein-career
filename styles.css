@@ -214,9 +214,11 @@ p { margin-bottom: 20px; }
 .approach-steps p { margin: 0; color: var(--ink-soft); }
 
 .contact-section { padding: 46px 0 110px; }
-.contact-panel { display: grid; grid-template-columns: 1.2fr .7fr; gap: 50px 80px; padding: clamp(38px, 7vw, 86px); border-radius: var(--radius-lg); background: var(--dark); color: var(--on-dark); box-shadow: var(--shadow); }
-.contact-panel h2, .contact-panel .section-kicker { color: var(--on-dark); }
-.contact-panel > p { align-self: end; color: color-mix(in srgb, var(--on-dark) 72%, transparent); }
+.contact-panel { display: grid; grid-template-columns: 1.2fr .7fr; gap: 50px 80px; padding: clamp(38px, 7vw, 86px); border: 1px solid color-mix(in srgb, var(--feature-ink) 16%, transparent); border-radius: var(--radius-lg); background: var(--feature-surface); color: var(--feature-ink); box-shadow: var(--shadow-soft); }
+.contact-panel h2, .contact-panel .section-kicker { color: var(--feature-ink); }
+.contact-panel > p { align-self: end; color: var(--feature-ink-soft); }
+.contact-panel .button--light { border-color: var(--feature-ink); background: var(--feature-ink); color: var(--feature-surface); }
+.contact-panel .button--outline-light { border-color: color-mix(in srgb, var(--feature-ink) 42%, transparent); background: transparent; color: var(--feature-ink); }
 .contact-panel .button-row { grid-column: 1/-1; }
 .site-footer { padding: 36px 0; border-top: 1px solid var(--line); }
 .footer-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 50px; }

@@ -176,21 +176,21 @@ p { margin-bottom: 20px; }
 .section--toolkit { background: var(--dark); color: var(--on-dark); }
 .section--toolkit h2, .section--toolkit .section-kicker { color: var(--on-dark); }
 .section--toolkit .section-head > p { color: color-mix(in srgb, var(--on-dark) 70%, transparent); }
-.toolkit-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(246,244,238,.18); }
-.tool-group { padding: 38px 34px 18px; border-right: 1px solid rgba(246,244,238,.18); }
+.toolkit-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid color-mix(in srgb, var(--on-dark) 28%, transparent); }
+.tool-group { padding: 38px 34px 18px; border-right: 1px solid color-mix(in srgb, var(--on-dark) 28%, transparent); }
 .tool-group:first-child { padding-left: 0; }
 .tool-group:last-child { border-right: 0; }
 .tool-label { color: color-mix(in srgb, var(--on-dark) 75%, transparent); }
 .badge-cloud { gap: 10px; }
 .badge-cloud span {
   padding: 9px 14px;
-  border-color: rgba(246,244,238,.26);
-  background: rgba(246,244,238,.07);
+  border-color: color-mix(in srgb, var(--on-dark) 52%, transparent);
+  background: color-mix(in srgb, var(--on-dark) 8%, transparent);
   color: var(--on-dark);
   font-size: .74rem;
   transition: transform .2s var(--ease), background-color .2s ease, border-color .2s ease;
 }
-.badge-cloud span:hover { transform: translateY(-2px); border-color: rgba(246,244,238,.42); background: rgba(246,244,238,.13); }
+.badge-cloud span:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--on-dark) 72%, transparent); background: color-mix(in srgb, var(--on-dark) 14%, transparent); }
 
 .approach-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(70px, 10vw, 150px); }
 .approach-copy > p:last-child { color: var(--ink-soft); }
@@ -264,7 +264,7 @@ p { margin-bottom: 20px; }
   .strength-card--wide { grid-column: span 1; }
   .timeline-intro { position: static; }
   .toolkit-grid { grid-template-columns: 1fr; }
-  .tool-group, .tool-group:first-child { padding: 32px 0; border-right: 0; border-bottom: 1px solid rgba(246,244,238,.18); }
+  .tool-group, .tool-group:first-child { padding: 32px 0; border-right: 0; border-bottom: 1px solid color-mix(in srgb, var(--on-dark) 28%, transparent); }
   .contact-panel { grid-template-columns: 1fr; }
   .contact-panel .button-row { grid-column: auto; }
 }

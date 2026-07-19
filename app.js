@@ -2,6 +2,7 @@
   "use strict";
 
   const root = document.documentElement;
+  const isEnglish = root.lang === "en";
   const themeToggle = document.querySelector("[data-theme-toggle]");
   const header = document.querySelector("[data-header]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -13,7 +14,9 @@
     if (!themeToggle) return;
     const isDark = activeTheme() === "dark";
     themeToggle.setAttribute("aria-pressed", String(isDark));
-    themeToggle.setAttribute("aria-label", isDark ? "Helles Farbschema aktivieren" : "Dunkles Farbschema aktivieren");
+    themeToggle.setAttribute("aria-label", isDark
+      ? (isEnglish ? "Switch to light mode" : "Helles Farbschema aktivieren")
+      : (isEnglish ? "Switch to dark mode" : "Dunkles Farbschema aktivieren"));
   };
 
   themeToggle?.addEventListener("click", () => {

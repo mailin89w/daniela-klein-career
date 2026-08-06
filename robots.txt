@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mailin89w.github.io/daniela-klein-career/sitemap.xml

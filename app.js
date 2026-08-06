@@ -5,6 +5,8 @@
   const isEnglish = root.lang === "en";
   const themeToggle = document.querySelector("[data-theme-toggle]");
   const header = document.querySelector("[data-header]");
+  const menuToggle = document.querySelector("[data-menu-toggle]");
+  const navigation = document.querySelector("[data-navigation]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const systemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -27,6 +29,32 @@
   });
   updateThemeControl();
 
+  const closeMenu = ({ restoreFocus = false } = {}) => {
+    if (!menuToggle || !navigation) return;
+    menuToggle.setAttribute("aria-expanded", "false");
+    navigation.classList.remove("is-open");
+    root.classList.remove("menu-open");
+    if (restoreFocus) menuToggle.focus();
+  };
+
+  menuToggle?.addEventListener("click", () => {
+    const willOpen = menuToggle.getAttribute("aria-expanded") !== "true";
+    menuToggle.setAttribute("aria-expanded", String(willOpen));
+    navigation?.classList.toggle("is-open", willOpen);
+    root.classList.toggle("menu-open", willOpen);
+    if (willOpen) navigation?.querySelector("a")?.focus();
+  });
+
+  navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeMenu()));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") {
+      closeMenu({ restoreFocus: true });
+    }
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) closeMenu();
+  });
+
   const updateHeader = () => header?.classList.toggle("is-scrolled", window.scrollY > 18);
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
@@ -41,38 +69,42 @@
         entry.target.classList.add("is-visible");
         observer.unobserve(entry.target);
       });
-    }, { rootMargin: "0px 0px -8%", threshold: 0.12 });
+    }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
     revealElements.forEach((element) => revealObserver.observe(element));
   }
 
-  const countElements = document.querySelectorAll("[data-count]");
-  const animateCount = (element) => {
-    const target = Number(element.dataset.count);
-    if (!Number.isFinite(target) || reduceMotion) {
-      element.textContent = String(target);
+  const copyText = async (value) => {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(value);
       return;
     }
-    const duration = 850;
-    const started = performance.now();
-    const tick = (now) => {
-      const progress = Math.min((now - started) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      element.textContent = String(Math.round(target * eased));
-      if (progress < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
+    const field = document.createElement("textarea");
+    field.value = value;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.opacity = "0";
+    document.body.append(field);
+    field.select();
+    document.execCommand("copy");
+    field.remove();
   };
 
-  if ("IntersectionObserver" in window) {
-    const countObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        animateCount(entry.target);
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.8 });
-    countElements.forEach((element) => countObserver.observe(element));
-  } else {
-    countElements.forEach(animateCount);
-  }
+  document.querySelectorAll("[data-copy-email]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const status = button.parentElement?.querySelector("[data-copy-status]");
+      try {
+        await copyText(button.dataset.copyEmail);
+        button.textContent = button.dataset.copiedLabel;
+        if (status) status.textContent = button.dataset.copiedLabel;
+        window.setTimeout(() => {
+          button.textContent = button.dataset.copyLabel;
+          if (status) status.textContent = "";
+        }, 2400);
+      } catch (error) {
+        if (status) status.textContent = isEnglish
+          ? "Copying failed. Please select the email address."
+          : "Kopieren fehlgeschlagen. Bitte die E-Mail-Adresse markieren.";
+      }
+    });
+  });
 })();

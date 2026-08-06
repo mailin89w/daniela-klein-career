@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap");
-
 :root {
   --frost-white: #f6fff4;
   --nordic-linen: #e4ded4;
@@ -14,8 +12,8 @@
   --page-width: 210mm;
   --page-min-height: 297mm;
   --content-padding: 16mm;
-  --font-display: "Manrope", "Avenir Next", Avenir, sans-serif;
-  --font-body: "Inter", Arial, sans-serif;
+  --font-display: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-body: Inter, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

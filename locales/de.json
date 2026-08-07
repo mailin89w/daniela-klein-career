@@ -13,7 +13,8 @@
     "location": "Hamburg, Deutschland"
   },
   "a11y": {
-    "skip": "Zum Hauptinhalt springen"
+    "skip": "Zum Hauptinhalt springen",
+    "newTab": "(öffnet in einem neuen Tab)"
   },
   "header": {
     "homeLabel": "Daniela Klein – Startseite",

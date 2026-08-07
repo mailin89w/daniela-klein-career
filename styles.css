@@ -52,6 +52,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+html.menu-open { overflow: hidden; }
 body {
   margin: 0;
   background: var(--bg);
@@ -107,7 +108,7 @@ p { margin-bottom: 20px; }
 .menu-toggle { display: none; min-width: 44px; min-height: 44px; align-items: center; gap: 9px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); cursor: pointer; }
 .menu-toggle__label { font: 600 .75rem/1 var(--font-display); }
 .menu-toggle__icon, .menu-toggle__icon::before, .menu-toggle__icon::after { display: block; width: 16px; height: 1px; background: currentColor; transition: transform .2s ease, opacity .2s ease; }
-.menu-toggle__icon { position: relative; }
+.menu-toggle__icon { position: relative; flex: 0 0 16px; }
 .menu-toggle__icon::before, .menu-toggle__icon::after { position: absolute; content: ""; }
 .menu-toggle__icon::before { transform: translateY(-5px); }
 .menu-toggle__icon::after { transform: translateY(5px); }
@@ -117,7 +118,7 @@ p { margin-bottom: 20px; }
 
 .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 12px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 999px; background: var(--ink); color: var(--bg); font: 600 .83rem/1 var(--font-display); text-decoration: none; transition: transform .25s var(--ease), box-shadow .25s ease, background-color .25s ease; }
 .button:hover { transform: translateY(-3px); box-shadow: var(--shadow-soft); }
-  .button:focus-visible, .text-link:focus-visible, nav a:focus-visible, .theme-toggle:focus-visible, .menu-toggle:focus-visible, .copy-button:focus-visible, .case-card:focus-visible { outline: 3px solid var(--warm); outline-offset: 4px; }
+  .button:focus-visible, .text-link:focus-visible, nav a:focus-visible, .theme-toggle:focus-visible, .menu-toggle:focus-visible, .copy-button:focus-visible, .case-card:focus-visible, .back-top:focus-visible { outline: 3px solid var(--warm); outline-offset: 4px; }
 .button--small { min-height: 40px; padding-inline: 18px; }
 .button--ghost { background: transparent; color: var(--ink); }
 .button--light { border-color: var(--on-dark); background: var(--on-dark); color: var(--dark); }
@@ -285,18 +286,34 @@ p { margin-bottom: 20px; }
   display: grid;
   width: 48px;
   height: 48px;
+  padding: 0;
   place-items: center;
+  justify-content: center;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: color-mix(in srgb, var(--surface-strong) 90%, transparent);
   box-shadow: var(--shadow-soft);
   color: var(--ink);
   font-size: 1.1rem;
+  line-height: 1;
   text-decoration: none;
   backdrop-filter: blur(14px);
   transition: transform .25s var(--ease), box-shadow .25s ease;
 }
+.back-top span { display: block; line-height: 1; }
 .back-top:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.js .back-top {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+}
+.js .back-top.is-visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
 
 .error-page { display: grid; min-height: 100vh; place-items: center; padding: 130px 0 70px; background: linear-gradient(140deg, var(--bg) 30%, var(--warm-soft)); }
 .error-page__content { max-width: 850px; }
@@ -389,8 +406,30 @@ p { margin-bottom: 20px; }
   .email-copy > a { overflow-wrap: anywhere; }
   .copy-button { justify-content: center; }
   .footer-inner { grid-template-columns: 1fr; gap: 26px; }
-  .footer-inner nav { grid-column: 1/-1; grid-row: 2; }
-  .back-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+  .footer-inner nav { grid-column: 1/-1; grid-row: 2; flex-wrap: wrap; gap: 8px 14px; }
+  .back-top {
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-toggle {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .menu-toggle__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

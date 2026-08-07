@@ -59,7 +59,7 @@ for (const page of pages) {
 
   const requiredContent = [
     page.requiredRole,
-    "mailto:mailin89w@hotmail.de?subject=Kennenlerngespr%C3%A4ch%20%E2%80%93%20Daniela%20Klein",
+    "mailto:mailin89w@hotmail.de?subject=Fachlicher%20Austausch%20%E2%80%93%20Daniela%20Klein",
     "mailin89w@hotmail.de",
     "https://www.credly.com/badges/1b175659-269c-404f-88b0-4a65361bb681/public_url",
   ];

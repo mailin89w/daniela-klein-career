@@ -12,6 +12,7 @@
   --accent-soft: #dbe2d9;
   --warm: #c8b99f;
   --warm-soft: #e8dfd0;
+  --focus: #405348;
   --dark: #1d2420;
   --on-dark: #f6f4ee;
   --feature-surface: #dde4db;
@@ -41,6 +42,7 @@
   --accent-soft: #2c3830;
   --warm: #c2b398;
   --warm-soft: #332f28;
+  --focus: #c2b398;
   --dark: #e9ede7;
   --on-dark: #181c19;
   --feature-surface: #242a26;
@@ -51,6 +53,7 @@
 }
 
 * { box-sizing: border-box; }
+.visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; overflow: hidden !important; clip: rect(0 0 0 0) !important; clip-path: inset(50%) !important; white-space: nowrap !important; border: 0 !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 92px; }
 html.menu-open { overflow: hidden; }
 body {
@@ -145,7 +148,7 @@ p { margin-bottom: 20px; }
 
 .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 12px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 999px; background: var(--ink); color: var(--bg); font: 600 .83rem/1 var(--font-display); text-decoration: none; transition: transform .25s var(--ease), box-shadow .25s ease, background-color .25s ease; }
 .button:hover { transform: translateY(-3px); box-shadow: var(--shadow-soft); }
-  .button:focus-visible, .text-link:focus-visible, nav a:focus-visible, .theme-toggle:focus-visible, .menu-toggle:focus-visible, .copy-button:focus-visible, .case-card:focus-visible, .back-top:focus-visible { outline: 3px solid var(--warm); outline-offset: 4px; }
+.button:focus-visible, .text-link:focus-visible, nav a:focus-visible, .theme-toggle:focus-visible, .menu-toggle:focus-visible, .copy-button:focus-visible, .case-card:focus-visible, .back-top:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 .button--small { min-height: 40px; padding-inline: 18px; }
 .button--ghost { background: transparent; color: var(--ink); }
 .button--secondary { border-color: color-mix(in srgb, var(--ink) 38%, transparent); background: color-mix(in srgb, var(--surface) 22%, transparent); color: var(--ink); box-shadow: none; }

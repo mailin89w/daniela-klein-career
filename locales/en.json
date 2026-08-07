@@ -36,9 +36,8 @@
     "claim": "Clarity for digital projects. Alignment for strong teams.",
     "lead": "More than ten years of frontend and e-commerce experience provide the technical foundation for structured project delivery. Requirements become understandable, dependencies visible and digital initiatives are supported reliably through to release.",
     "actionsLabel": "Direct actions",
-    "primaryCta": "Start a professional conversation",
-    "casesCta": "View case studies",
-    "cvCta": "View résumé"
+    "casesCta": "Projects",
+    "cvCta": "CV"
   },
   "evidence": {
     "label": "Verified experience signals",
@@ -58,8 +57,8 @@
     "kicker": "Contribution",
     "title": "What keeps projects workable",
     "intro": "Three capability areas, each supported by a concrete experience signal rather than a list of buzzwords.",
-    "evidenceLink": "Evidence in the case",
-    "referenceLink": "Shopify reference",
+    "evidenceLink": "View project",
+    "referenceLink": "View Shopify project",
     "delivery": {
       "title": "Project & Delivery",
       "body": "Turn complex initiatives into clear next steps, expose dependencies and protect quality through to release.",

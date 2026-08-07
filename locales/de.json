@@ -28,7 +28,7 @@
     "languageDeAttributes": "aria-current=\"page\"",
     "languageEnAttributes": "hreflang=\"en\"",
     "themeLabel": "Farbschema wechseln",
-    "meet": "Kennenlernen"
+    "meet": "Austauschen"
   },
   "hero": {
     "eyebrow": "Daniela Klein · Hamburg",
@@ -36,7 +36,7 @@
     "claim": "Klarheit für digitale Projekte. Verbindung für starke Teams.",
     "lead": "Mehr als zehn Jahre Frontend- und E-Commerce-Erfahrung bilden das technische Fundament für strukturierte Projektarbeit. Anforderungen werden verständlich, Abhängigkeiten sichtbar und digitale Vorhaben verlässlich bis zum Release begleitet.",
     "actionsLabel": "Direkte Aktionen",
-    "primaryCta": "Kennenlerngespräch vereinbaren",
+    "primaryCta": "Fachlichen Austausch starten",
     "casesCta": "Case Studies ansehen",
     "cvCta": "Lebenslauf ansehen"
   },
@@ -51,7 +51,7 @@
     "kicker": "Profil",
     "title": "Technisches Fundament. Klarer Fokus auf Projektsteuerung und Delivery.",
     "intro": "Langjährige Entwicklungspraxis macht technische Möglichkeiten, Risiken und Abhängigkeiten früh einschätzbar.",
-    "body": "Darauf baut der Schwerpunkt im Technical Project Management auf: Anforderungen zwischen Business, Design und Engineering übersetzen, Entscheidungen nachvollziehbar dokumentieren und Qualität vom Briefing bis zum Release sichern. Der im April 2026 abgeschlossene AI-Project-Manager-Lehrgang ergänzt diese Erfahrung um AI Business Cases, MLOps, Responsible AI und Datenschutz.",
+    "body": "Darauf baut der Schwerpunkt im Technical Project Management auf: Anforderungen zwischen Business, Design und Engineering übersetzen, Entscheidungen nachvollziehbar dokumentieren und Qualität vom Briefing bis zum Release sichern. Der im April 2026 abgeschlossene AI-Project-Manager-Lehrgang ergänzt diese Erfahrung um AI Business Cases, MLOps, Responsible AI und Datenschutz. Für die weitere Entwicklung steht eine langfristige Rolle im Technical Project Management in einem festen Team im Mittelpunkt.",
     "principle": "Strukturiert arbeiten, verständlich kommunizieren und Zusagen einhalten."
   },
   "strengths": {
@@ -79,13 +79,13 @@
   "cases": {
     "kicker": "Ausgewählte Evidenz",
     "title": "Case Studies",
-    "intro": "Zwei zentrale Projektumfelder zeigen Beitrag, Vorgehen und belastbare Erfahrung – ohne nicht freigegebene Kennzahlen oder interne Details.",
+    "intro": "Ausgewählte Stationen aus langjähriger Tätigkeit in festen Teams zeigen Beitrag, Vorgehen und belastbare Erfahrung – ohne nicht freigegebene Kennzahlen oder interne Details.",
     "indexLabel": "Case-Study-Auswahl",
     "open": "Case lesen",
     "caseStudy": "Case Study",
     "reference": "Kompakte Referenz",
     "period": "Zeitraum",
-    "environment": "Projektumfeld",
+    "environment": "Unternehmen & Projektkontext",
     "focus": "Fokus",
     "context": "Ausgangslage",
     "contribution": "Beitrag & Scope",
@@ -96,7 +96,7 @@
       "summary": "Enterprise-E-Commerce-Delivery in einem internationalen, markenübergreifenden Umfeld für Deutschland und die USA.",
       "focus": "Technische Anforderungen, Frontend-Delivery und Qualitätssicherung",
       "context": "Digitale E-Commerce-Lösungen für zwei Märkte erforderten verlässliche Umsetzung in einem komplexen Enterprise-Umfeld mit mehreren beteiligten Fachbereichen.",
-      "contribution": "Projektbeitrag im Umfeld von diva-e mit Fokus auf Frontend-Delivery, technische Anforderungen, fachbereichsübergreifende Abstimmung und Qualitätssicherung.",
+      "contribution": "Während der Tätigkeit bei Patrick & Friends: Zusammenarbeit im diva-e-Projektkontext mit Fokus auf Frontend-Delivery, technische Anforderungen, fachbereichsübergreifende Abstimmung und Qualitätssicherung.",
       "approach": "Anforderungen technisch einordnen, offene Abhängigkeiten sichtbar machen, Umsetzungsstände nachvollziehbar halten und die Qualität bis zu Reviews und Releases begleiten.",
       "evidence": "Mehrjährige Enterprise-E-Commerce-Erfahrung im Projektumfeld von ALDI Süd in Deutschland und den USA.",
       "learning": "In komplexen Delivery-Umfeldern entsteht Verlässlichkeit vor allem durch klare Anforderungen, sichtbare Abhängigkeiten und gemeinsam verstandene Qualitätskriterien."
@@ -105,20 +105,20 @@
       "summary": "Modulare White-Label-Lösungen, Websites, Relaunches und Promotions für mehr als zehn Marken im DACH-Umfeld.",
       "focus": "White Label, Brand Consistency, Reviews und Releases",
       "context": "Mehrere Marken benötigten eigenständige digitale Auftritte auf einer wiederverwendbaren technischen Basis.",
-      "contribution": "Operative Umsetzung und Pflege modularer Lösungen, Koordination technischer Anforderungen mit internen Teams und externen Agenturen sowie Begleitung von Reviews und Releases.",
+      "contribution": "Während der Tätigkeit bei deepblue networks: operative Umsetzung und Pflege modularer Lösungen, Koordination technischer Anforderungen mit internen Teams und externen Agenturen sowie Begleitung von Reviews und Releases.",
       "approach": "Wiederverwendbare Strukturen aufbauen, Markenanforderungen sauber in die Umsetzung übertragen und Entscheidungen sowie Umsetzungsstände für Stakeholder dokumentieren.",
       "evidence": "Digitale Lösungen für mehr als zehn Unilever-Marken, darunter öffentlich genannte Projektumfelder wie Knorr, Dove, AXE und Magnum.",
       "learning": "Eine gemeinsame Plattform schafft nur dann echten Nutzen, wenn Wiederverwendbarkeit und markenspezifische Anforderungen gleichwertig berücksichtigt werden."
     },
     "koro": {
-      "body": "Projektbeitrag im Umfeld von Patrick & Friends im Juli und August 2023: Shopify-Storefront, Liquid-Umsetzung, Design-to-Code und technische Qualitätssicherung.",
+      "body": "Shopify-Projekt während der Tätigkeit bei Patrick & Friends im Juli und August 2023: Storefront, Liquid-Umsetzung, Design-to-Code und technische Qualitätssicherung.",
       "skillsLabel": "Schwerpunkte der KORO-Referenz"
     }
   },
   "experience": {
     "kicker": "Laufbahn",
     "title": "Vom Design über Entwicklung zu Technical Project Management",
-    "intro": "Frontend bleibt das technische Fundament. Der heutige Schwerpunkt liegt auf Anforderungen, Schnittstellen, Delivery und verlässlicher Projektarbeit.",
+    "intro": "Mehr als zehn Jahre Berufserfahrung in festen Teams bilden das technische Fundament. Der heutige Schwerpunkt liegt auf Anforderungen, Schnittstellen, Delivery und verlässlicher Projektarbeit.",
     "completed": "Abschluss April 2026",
     "ai": "Planung und Bewertung von AI-Projekten, AI Business Cases, agile Zusammenarbeit, Qualitätsmetriken, Python, MLOps, Responsible AI und DSGVO.",
     "pafRole": "Senior Frontend Development · Projekt- & Delivery-Fokus",
@@ -151,9 +151,9 @@
   },
   "contact": {
     "kicker": "Kontakt",
-    "title": "Technische Projektsteuerung mit sicherem Verständnis für Design, Engineering und digitale Delivery?",
-    "intro": "Dann lohnt sich ein unverbindliches Kennenlerngespräch über das Vorhaben, die Schnittstellen und den konkreten Bedarf.",
-    "primary": "Kennenlerngespräch vereinbaren"
+    "title": "Fachlicher Austausch zu Technical Project Management, digitaler Delivery und E-Commerce.",
+    "intro": "Der Austausch über technische Projektarbeit, Zusammenarbeit im Team und neue berufliche Perspektiven ist jederzeit willkommen.",
+    "primary": "Fachlichen Austausch starten"
   },
   "footer": {
     "role": "Senior Technical Project Manager · Digital Delivery & E-Commerce",

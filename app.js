@@ -7,6 +7,7 @@
   const header = document.querySelector("[data-header]");
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const navigation = document.querySelector("[data-navigation]");
+  const backTop = document.querySelector(".back-top");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const systemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -55,9 +56,13 @@
     if (window.innerWidth > 980) closeMenu();
   });
 
-  const updateHeader = () => header?.classList.toggle("is-scrolled", window.scrollY > 18);
-  updateHeader();
-  window.addEventListener("scroll", updateHeader, { passive: true });
+  const updateScrollState = () => {
+    header?.classList.toggle("is-scrolled", window.scrollY > 18);
+    backTop?.classList.toggle("is-visible", window.scrollY > Math.max(480, window.innerHeight * 0.75));
+  };
+  updateScrollState();
+  window.addEventListener("scroll", updateScrollState, { passive: true });
+  window.addEventListener("resize", updateScrollState);
 
   const revealElements = document.querySelectorAll("[data-reveal]");
   if (reduceMotion || !("IntersectionObserver" in window)) {

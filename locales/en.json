@@ -28,7 +28,7 @@
     "languageDeAttributes": "hreflang=\"de\"",
     "languageEnAttributes": "aria-current=\"page\"",
     "themeLabel": "Change colour scheme",
-    "meet": "Meet Daniela"
+    "meet": "Connect"
   },
   "hero": {
     "eyebrow": "Daniela Klein · Hamburg",
@@ -36,7 +36,7 @@
     "claim": "Clarity for digital projects. Alignment for strong teams.",
     "lead": "More than ten years of frontend and e-commerce experience provide the technical foundation for structured project delivery. Requirements become understandable, dependencies visible and digital initiatives are supported reliably through to release.",
     "actionsLabel": "Direct actions",
-    "primaryCta": "Arrange an introductory call",
+    "primaryCta": "Start a professional conversation",
     "casesCta": "View case studies",
     "cvCta": "View résumé"
   },
@@ -51,7 +51,7 @@
     "kicker": "Profile",
     "title": "Technical foundation. Clear focus on project leadership and delivery.",
     "intro": "Years of hands-on development make technical opportunities, risks and dependencies easier to assess early.",
-    "body": "That experience underpins the focus on technical project leadership: translating requirements across business, design and engineering, documenting decisions clearly and protecting quality from briefing to release. The AI Project Manager programme completed in April 2026 adds AI business cases, MLOps, Responsible AI and data protection.",
+    "body": "That experience underpins the focus on technical project leadership: translating requirements across business, design and engineering, documenting decisions clearly and protecting quality from briefing to release. The AI Project Manager programme completed in April 2026 adds AI business cases, MLOps, Responsible AI and data protection. The next stage of professional development is focused on a long-term technical project management role within an established team.",
     "principle": "Work with structure, communicate clearly and keep commitments."
   },
   "strengths": {
@@ -79,13 +79,13 @@
   "cases": {
     "kicker": "Selected evidence",
     "title": "Case Studies",
-    "intro": "Two central project environments show contribution, approach and supported experience without disclosing unapproved metrics or internal details.",
+    "intro": "Selected work from long-term roles in established teams shows contribution, approach and supported experience without disclosing unapproved metrics or internal details.",
     "indexLabel": "Case study selection",
     "open": "Read case",
     "caseStudy": "Case Study",
     "reference": "Compact reference",
     "period": "Period",
-    "environment": "Project environment",
+    "environment": "Company & project context",
     "focus": "Focus",
     "context": "Context",
     "contribution": "Contribution & Scope",
@@ -96,7 +96,7 @@
       "summary": "Enterprise e-commerce delivery in an international, cross-market environment for Germany and the United States.",
       "focus": "Technical requirements, frontend delivery and quality assurance",
       "context": "Digital e-commerce solutions for two markets required reliable implementation in a complex enterprise environment involving several disciplines.",
-      "contribution": "Project contribution in the diva-e environment, focused on frontend delivery, technical requirements, cross-functional alignment and quality assurance.",
+      "contribution": "During the role at Patrick & Friends: collaboration within the diva-e project context, focused on frontend delivery, technical requirements, cross-functional alignment and quality assurance.",
       "approach": "Assess requirements technically, expose open dependencies, keep delivery status understandable and support quality through reviews and releases.",
       "evidence": "Several years of enterprise e-commerce experience in the ALDI Süd project environment in Germany and the United States.",
       "learning": "In complex delivery environments, reliability comes primarily from clear requirements, visible dependencies and quality criteria understood by everyone involved."
@@ -105,20 +105,20 @@
       "summary": "Modular white-label solutions, websites, relaunches and promotions for more than ten brands in the DACH region.",
       "focus": "White label, brand consistency, reviews and releases",
       "context": "Several brands needed distinct digital experiences built on a reusable technical foundation.",
-      "contribution": "Hands-on delivery and maintenance of modular solutions, coordination of technical requirements with internal teams and external agencies, and support for reviews and releases.",
+      "contribution": "During the role at deepblue networks: hands-on delivery and maintenance of modular solutions, coordination of technical requirements with internal teams and external agencies, and support for reviews and releases.",
       "approach": "Build reusable structures, translate brand requirements accurately into delivery, and document decisions and progress for stakeholders.",
       "evidence": "Digital solutions for more than ten Unilever brands, including publicly named project environments such as Knorr, Dove, AXE and Magnum.",
       "learning": "A shared platform creates value only when reusability and brand-specific requirements receive equal attention."
     },
     "koro": {
-      "body": "Project contribution in the Patrick & Friends environment in July and August 2023: Shopify storefront, Liquid implementation, design-to-code and technical quality assurance.",
+      "body": "Shopify project during the role at Patrick & Friends in July and August 2023: storefront, Liquid implementation, design-to-code and technical quality assurance.",
       "skillsLabel": "KORO reference focus areas"
     }
   },
   "experience": {
     "kicker": "Career",
     "title": "From design and development to technical project leadership",
-    "intro": "Frontend remains the technical foundation. The current focus is requirements, interfaces, delivery and dependable project work.",
+    "intro": "More than ten years of experience in established teams provide the technical foundation. The current focus is requirements, interfaces, delivery and dependable project work.",
     "completed": "completed April 2026",
     "ai": "Planning and evaluating AI projects, AI business cases, agile collaboration, quality metrics, Python, MLOps, Responsible AI and GDPR.",
     "pafRole": "Senior Frontend Development · Project & Delivery Focus",
@@ -151,9 +151,9 @@
   },
   "contact": {
     "kicker": "Contact",
-    "title": "Technical project leadership grounded in design, engineering and digital delivery?",
-    "intro": "An introductory conversation is a straightforward way to discuss the initiative, its interfaces and the specific need.",
-    "primary": "Arrange an introductory call"
+    "title": "Professional exchange on technical project management, digital delivery and e-commerce.",
+    "intro": "Conversations about technical project work, team collaboration and new professional perspectives are always welcome.",
+    "primary": "Start a professional conversation"
   },
   "footer": {
     "role": "Technical Project Lead · Digital Products, E-Commerce & AI",

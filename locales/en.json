@@ -13,7 +13,8 @@
     "location": "Hamburg, Germany"
   },
   "a11y": {
-    "skip": "Skip to main content"
+    "skip": "Skip to main content",
+    "newTab": "(opens in a new tab)"
   },
   "header": {
     "homeLabel": "Daniela Klein – Home",

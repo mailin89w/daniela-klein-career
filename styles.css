@@ -196,7 +196,7 @@ p { margin-bottom: 20px; }
 .strength-card--wide { grid-column: span 2; }
 .strength-card--wide p { max-width: 650px; }
 .card-index { position: absolute; top: 26px; right: 26px; color: var(--ink-soft); font: 600 .67rem/1 var(--font-display); }
-.strength-card h3 { margin-top: 104px; }
+.card-icon { display: grid; width: 48px; height: 48px; margin-bottom: 60px; place-items: center; border-radius: 50%; background: var(--accent-soft); color: var(--accent-strong); font-size: 1.3rem; }
 .strength-card p { color: var(--ink-soft); }
 .strength-grid--three .strength-card { min-height: 390px; }
 .evidence-note { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .79rem; }

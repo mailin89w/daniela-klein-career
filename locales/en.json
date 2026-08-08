@@ -59,7 +59,7 @@
     "title": "What keeps projects workable",
     "intro": "Three capability areas, each supported by a concrete experience signal rather than a list of buzzwords.",
     "evidenceLink": "View project",
-    "referenceLink": "View Shopify project",
+    "credentialsLink": "View Shopify certification",
     "delivery": {
       "title": "Project & Delivery",
       "body": "Turn complex initiatives into clear next steps, expose dependencies and protect quality through to release.",
@@ -83,7 +83,6 @@
     "indexLabel": "Case study selection",
     "open": "Project details",
     "caseStudy": "Case Study",
-    "reference": "Compact reference",
     "period": "Period",
     "environment": "Company & project context",
     "focus": "Focus",
@@ -109,10 +108,6 @@
       "approach": "Build reusable structures, translate brand requirements accurately into delivery, and document decisions and progress for stakeholders.",
       "evidence": "Digital solutions for more than ten Unilever brands, including publicly named project environments such as Knorr, Dove, AXE and Magnum.",
       "learning": "A shared platform creates value only when reusability and brand-specific requirements receive equal attention."
-    },
-    "koro": {
-      "body": "Shopify project during the role at Patrick & Friends in July and August 2023: storefront, Liquid implementation, design-to-code and technical quality assurance.",
-      "skillsLabel": "KORO reference focus areas"
     }
   },
   "experience": {

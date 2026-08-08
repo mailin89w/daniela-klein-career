@@ -59,7 +59,7 @@
     "title": "Was Projekte arbeitsfähig macht",
     "intro": "Drei Kompetenzfelder, jeweils mit einem konkreten Erfahrungssignal statt einer reinen Schlagwortliste.",
     "evidenceLink": "Projekt ansehen",
-    "referenceLink": "Shopify-Projekt ansehen",
+    "credentialsLink": "Shopify-Zertifizierung ansehen",
     "delivery": {
       "title": "Projekt & Delivery",
       "body": "Komplexe Vorhaben in klare nächste Schritte übersetzen, Abhängigkeiten sichtbar machen und Qualität bis zum Release absichern.",
@@ -83,7 +83,6 @@
     "indexLabel": "Case-Study-Auswahl",
     "open": "Projektdetails",
     "caseStudy": "Case Study",
-    "reference": "Kompakte Referenz",
     "period": "Zeitraum",
     "environment": "Unternehmen & Projektkontext",
     "focus": "Fokus",
@@ -109,10 +108,6 @@
       "approach": "Wiederverwendbare Strukturen aufbauen, Markenanforderungen sauber in die Umsetzung übertragen und Entscheidungen sowie Umsetzungsstände für Stakeholder dokumentieren.",
       "evidence": "Digitale Lösungen für mehr als zehn Unilever-Marken, darunter öffentlich genannte Projektumfelder wie Knorr, Dove, AXE und Magnum.",
       "learning": "Eine gemeinsame Plattform schafft nur dann echten Nutzen, wenn Wiederverwendbarkeit und markenspezifische Anforderungen gleichwertig berücksichtigt werden."
-    },
-    "koro": {
-      "body": "Shopify-Projekt während der Tätigkeit bei Patrick & Friends im Juli und August 2023: Storefront, Liquid-Umsetzung, Design-to-Code und technische Qualitätssicherung.",
-      "skillsLabel": "Schwerpunkte der KORO-Referenz"
     }
   },
   "experience": {

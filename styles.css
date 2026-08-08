@@ -231,9 +231,6 @@ p { margin-bottom: 20px; }
 .case-body section { min-height: 210px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); }
 .case-body section:last-child { grid-column: 1 / -1; min-height: 0; background: var(--feature-surface); }
 .case-body p { margin: 0; color: var(--ink-soft); }
-.compact-reference { display: grid; grid-template-columns: .7fr 1fr; gap: 50px 80px; align-items: start; margin-top: 18px; padding: 46px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--feature-surface); scroll-margin-top: 90px; }
-.compact-reference > p { color: var(--feature-ink-soft); }
-.compact-reference .badge-list { grid-column: 2; margin-top: 0; }
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .project-card { position: relative; min-height: 390px; padding: 34px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--bg); transition: transform .35s var(--ease), box-shadow .35s ease; }
 .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-soft); }
@@ -399,8 +396,7 @@ p { margin-bottom: 20px; }
   .strength-grid { grid-template-columns: repeat(2, 1fr); }
   .strength-card--wide { grid-column: span 1; }
   .timeline-intro { position: static; }
-  .case-study__header, .compact-reference, .credentials-grid { grid-template-columns: 1fr; }
-  .compact-reference .badge-list { grid-column: auto; }
+  .case-study__header, .credentials-grid { grid-template-columns: 1fr; }
   .toolkit-grid { grid-template-columns: 1fr; }
   .tool-group, .tool-group:first-child { padding: 32px 0; border-right: 0; border-bottom: 1px solid color-mix(in srgb, var(--feature-ink) 28%, transparent); }
   .contact-panel { grid-template-columns: 1fr; }
@@ -442,7 +438,6 @@ p { margin-bottom: 20px; }
   .case-facts div, .case-facts div:first-child { padding: 18px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .case-facts div:last-child { border-bottom: 0; }
   .case-body section, .case-body section:last-child { grid-column: auto; min-height: 0; }
-  .compact-reference { gap: 22px; padding: 30px 24px; }
   .project-card--featured { grid-column: auto; min-height: 440px; padding-right: 34px; padding-bottom: 140px; }
   .project-card--featured::after { top: auto; right: 12%; bottom: 30px; width: 24%; }
   .project-meta { margin-bottom: 58px; }
